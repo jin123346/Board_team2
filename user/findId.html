@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>아이디 찾기</title>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+        }
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: left;
+            font-size: 1.2em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #222121;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+      
+        .form-group input {
+            width: calc(100% 100px);
+            padding: 3px;
+        }
+        .form-group button {
+            margin: 3px;
+        }
+        
+        .note {
+            font-size:12px;
+            color: #555;
+            margin-top: 10px;
+        }
+        .footer {
+            text-align: right;
+            margin-top: 20px;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.8em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <header>
+        <span class="top">Borad System</span>
+    </header>
+</div>
+<div class="container">
+    <div class="header">
+        아이디 찾기
+    </div>
+    <form>
+        <table>
+            <tr>
+                <td>이름</td>
+                <td>
+                    <input type="text" id="name" placeholder="이름 입력">
+                </td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="이메일 입력">
+                        <button type="button" class="btn-auth">인증번호받기</button>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="code" placeholder="인증번호 입력">
+                        <button type="button" class="btn-confim">확인</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="note">
+            회원가입시 이메일 주소와 입력한 이메일 주소가 같아야, 인증번호를 받을 수 있습니다.<br>
+            인증번호를 입력 후 확인 버튼을 누르세요.
+        </div>
+        <div class="footer">
+            <button type="button">취소</button>
+            <button type="submit">다음</button>
+        </div>
+    </form>
+</div>
+
+<div class="copyright">
+    Copyright© <br>
+    v1.0.1
+</div>
+
+</body>
+</html>
