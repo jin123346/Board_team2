@@ -59,7 +59,7 @@
         .infotable {
             width: 600px;
             height: auto;
-            border: 1px solid orangered;
+           
             box-sizing: border-box;
         }
         table, th, td {
@@ -123,9 +123,11 @@
         }
 
         #search-address {
-            width: auto;
+            width: 162px;
+            height: 17px;
+            padding: 14px 3px;
             margin-top: 5px;
-            margin-bottom: 5px;
+            margin-bottom: 1px;
         }
 
         #input-address {
@@ -198,15 +200,15 @@
 
     
         .btn-postal{
-                    display: inline-flex;
-                    width: auto;
-                    align-items: center;
-                    box-sizing: border-box;
-                    border: 1px solid #ccc;
-                    cursor: pointer;
-                    font-size: 12px;
-                    justify-content: center;
-                    background-color: white;
+            display: inline-flex;
+            width: auto;
+            align-items: center;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-size: 12px;
+            justify-content: center;
+            background-color: white;
 
         }
 
@@ -215,6 +217,14 @@
             width: 58px; /* Adjust the size as needed */
             height: 18px;
             left: 10px;
+        }
+
+        .btn-postal .icon {
+            margin-right: 0px; /* Space between the icon and text */
+            width: 80px; /* Adjust the size as needed */
+            height: 18px;
+            left: 10px;
+            
         }
 
 
@@ -357,7 +367,7 @@
                             <th>주소</th>
                             <td class="form-group">
                                 <div class="address">
-                                    <input type="search" id="search address" placeholder="우편번호">
+                                    <input type="search" id="search-address" placeholder="우편번호">
                                     <button type="button" class="btn-postal"> <img src="../images/chk_post.gif" alt="Postal check" class="icon"></button>
                                 </div>
                                 <div class="address">
