@@ -10,47 +10,43 @@
 </head>
 <body>
     <header>
+        <h1>Board System</h1>
         <div>
-            <h4>Board System</h4>
-            <h3>홍길동님 반갑습니다.<a href="#"> [로그아웃]</a></h3>
+            홍길동님 반갑습니다. <a href="#">[로그아웃]</a>
         </div>
     </header>
-    <main>
-        <section>
-            <nav>
-                <h1>글쓰기</h1>
-            </nav>
-            <form>
-                <table>
-                    <body>
-                        <row>
-                            <data>
-                                <cell><strong>제목</strong></cell>
-                                <input type="text" name="제목을 입력하세요">
-                            </data>
-                        </row>
-                        <row>
-                            <input type="textarea" name="write">
-                            <cell><span>내용</span></cell>
-                        </row>
-                        <row>
-                            <data>
-                                <input type="file" value="asdf">
-                            </data>
-                        </row>
-                        
-                    </body>
-                </table>
-                <input type="button" name="취소">
-                <input type="button" name="작성완료">
-            </form>
-        </section>
-    </main>
+    <div class="container">
+        <nav>
+            <h4>글쓰기</h4>
+        </nav>
+        <form>
+            <table class="form-table">
+                <tr>
+                    <th>제목</th>
+                    <td><input type="text" placeholder="제목을 입력하세요."></td>
+                </tr>
+                <tr>
+                    <th>내용</th>
+                    <td><textarea rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <th>파일</th>
+                    <td><input type="file"></td>
+                </tr>
+            </table>
+            <div class="form-buttons">
+                <button type="button">취소</button>
+                <button type="submit">작성완료</button>
+            </div>
+        </form>
+    </div>
     <footer>
-        <div>
-            <h3>Copuright© 김철학(개발에반하다.)</h3>
-            <h3>v1.0.1</h3>
-        </div>
+    <div>
+        Copyright© 김철학(개발에반하다.)
+    </div>
+    <div>
+        v1.0.1
+    </div>
     </footer>
 </body>
 </html>
