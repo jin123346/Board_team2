@@ -91,6 +91,15 @@ button {
   
 } 
 
+.btn-confim{
+    width: 34px;
+    height: 27px;
+    border: 1px 0px 0px 0px;
+    opacity:  0px;
+
+}
+
+
 
 .note {
     text-align: left;
