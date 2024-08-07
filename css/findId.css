@@ -1,7 +1,9 @@
-body {
-    font-family: "Inter", sans-serif;
-    font-size: 12px;
-}
+html,body { width: 100%; height:100%; margin:0; padding:0; font-family: "Inter", sans-serif; font-size: 12px; font-weight: 400;}
+body{color: #000; word-break:keep-all; -ms-word-break:keep-all; }
+a, address, blockquote, br, fieldset, legend, label, form, input, select, textarea, button, cite, code, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, div, iframe, ul, ol, li, hr, img {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {color:#000;}
+ul, ol, li {list-style: none;}
+input, textarea {outline: none;}
 
 #wrapper {
     width: 100%;
@@ -15,6 +17,9 @@ header{
     width: 790px;
     height: 30px;
     margin: 0 auto;
+}
+header .top{
+    font-size: 10.31px;
 }
 main{
     width: 790px;
@@ -69,10 +74,12 @@ input {
     height: 24px;
     padding: 3px;
     box-sizing: border-box;
+    border: 1px solid #E4EAEC;
+    line-height: 24px;
 }
 
 input#code {
-    margin-top: 7px;
+    margin-bottom: 1px;
 }
 button {
     border: 1px solid #BEBEBE;
@@ -81,21 +88,37 @@ button {
     background-color: #EFEFEF;
     padding: 0px;
 }
+.form-group{
+    margin-bottom: 5px;
+}
+
+.form-group > div{
+    box-sizing: border-box;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    
+} 
 
  .btn-auth{
     box-sizing: border-box;
     width: 85px;
     font-size: 12px;
-    border: 1px 0px 0px 0px;
-    /* line-height : 14.52px; */
-  
+    line-height : 26.5px;
+    font-size: 12px;
+    text-align: center;
 } 
 
+
 .btn-confim{
+    box-sizing: border-box;
     width: 34px;
     height: 27px;
-    border: 1px 0px 0px 0px;
-    opacity:  0px;
+    text-align: center;
+    align-items: center;
+    line-height : 26.5px;
+    font-size: 12px;
+    
 
 }
 
@@ -103,21 +126,33 @@ button {
 
 .note {
     text-align: left;
-    width: 456.2px;
+    width: auto;
     height: 40px;
-   
+    white-space: nowrap;
+  
+
 }
 
 .note > p{
+    box-sizing: border-box;
     font-size:12px;
     font-weight: 400;
     color: #555;
     margin-top: 18px;
     line-height: 20px;
+    width: 456.2px;
+    max-width: max-content;
+   
+
 }
 .footer {
     text-align: right;
     margin-top: 20px;
+}
+
+.footer > button{
+    border: 1px solid #BEBEBE;  
+    background-color: #FFFFFF;
 }
 
 .footer >.btn-cancel{
@@ -149,12 +184,6 @@ footer{
     height: 17px;
     margin: 0 auto;
 }
-/* .copyright {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 0.8em;
-    color: #888;
-} */
 
 
 .copyright >span:nth-child(1){
@@ -163,7 +192,7 @@ footer{
     top: 1px;
     gap: 0px;
     opacity: 0px;
-    font-size: 12px;
+    font-size: 11.44px;
     font-weight: 400;
     line-height: 14.52px;
     text-align: left;
@@ -177,7 +206,7 @@ footer{
     left: 760px;
     gap: 0px;
     opacity: 0px;
-    font-size: 12px;
+    font-size: 11.44px;
     font-weight: 400;
     line-height: 24.52px;
     text-align: left;
