@@ -75,6 +75,7 @@ input {
     padding: 3px;
     box-sizing: border-box;
     border: 1px solid #E4EAEC;
+    line-height: 24px;
 }
 
 input#code {
@@ -87,29 +88,37 @@ button {
     background-color: #EFEFEF;
     padding: 0px;
 }
+.form-group{
+    margin-bottom: 5px;
+}
 
- .btn-auth{
-    box-sizing: border-box;
-    width: 85px;
-    font-size: 12px;
- 
-    line-height : 14.52px;
-  
-} 
 .form-group > div{
+    box-sizing: border-box;
     display: inline-flex;
     text-align: center;
     justify-content: center;
     
 } 
 
+ .btn-auth{
+    box-sizing: border-box;
+    width: 85px;
+    font-size: 12px;
+    line-height : 26.5px;
+    font-size: 12px;
+    text-align: center;
+} 
+
+
 .btn-confim{
+    box-sizing: border-box;
     width: 34px;
     height: 27px;
     text-align: center;
-    border: 1px 0px 0px 0px;
-    opacity:  0px;
-    line-height : 14.52px;
+    align-items: center;
+    line-height : 26.5px;
+    font-size: 12px;
+    
 
 }
 

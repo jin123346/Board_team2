@@ -1,0 +1,321 @@
+   *{
+            margin: 0 ;
+            padding: 0;
+            font: normal 12px "Inter";
+            font-family: "Inter", sans-serif;
+        }
+
+        ul, ol{list-style: none;}
+        a{ text-decoration: none; color: black;}
+        input, textarea {outline: none;}
+        #outline {
+            width: 100%;
+            height: auto;
+            font-size: 12px;
+          
+        }
+
+        header {
+            width: 790px;
+            height: 30px;
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 0 auto;
+            font-size: 10.13px;
+        }
+
+        header > div {
+            width: 100%;
+            box-sizing: border-box;
+            height: 95px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        main input{
+            width: 162px;
+            height: 17px;
+            top: 3.5px;
+            left: 1px;
+            padding: 1px 80.8px 2px 6px;
+            gap: 0px;
+            opacity: 0px;
+        }
+
+        .infotable {
+            width: 600px;
+            height: auto;
+            margin-top: 95px;
+            box-sizing: border-box;
+        }
+        table, th, td {
+            border: 1px solid #E9E9E9;
+        }
+
+        .form-group {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:0px; 
+        
+        }
+        .form-group > .address{
+            flex: auto;
+            flex-direction: row;
+            
+        }
+
+
+        #input-nickname {
+            
+            margin-right: 8px; /* Space between input and button */
+        }
+
+        #register-form span {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+       
+
+       
+
+        #register-form table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        #register-form table:nth-of-type(1){
+            box-sizing: border-box;
+            height: 139px;
+        }
+        #register-form table:nth-of-type(2){
+            box-sizing: border-box;
+            height: 306px;
+        }
+
+        #register-form th, #register-form td {
+            padding: 10px;
+        }
+
+        #register-form th{
+            width: 160px;
+            background-color: #F5F8F9;
+        }
+
+        #register-form input {
+            margin-top: 4px;
+            padding: 5px;
+        }
+
+        #search-address {
+            width: 162px;
+            height: 17px;
+            padding: 14px 3px;
+            margin-top: 5px;
+            margin-bottom: 1px;
+        }
+
+        #input-address {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3px;
+            width: 362px;
+            
+
+        }
+        button{
+            margin-left: 10px;
+            margin-top: 3px;
+            
+        }
+        .btn-modifty{
+            width: 85px;
+            height: 27px;
+            top: 6.5px;
+            left: 179.5px;
+            /* gap: 0px; */
+            /* opacity: 0px; */
+            border: 1px solid #E9E9E9;
+            background-color: #2E658A;
+            color: FFFFFF;
+           
+        }
+        .btn-modifty > p{
+            color: #FFFFFF;
+        }
+
+        .btn-duplicate {
+            flex-shrink: 0;
+            display: inline-flex;
+            width: auto;
+            height: 22px;
+            align-items: initial;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-size: 12px;
+            justify-content: center;
+            background-color: white; /* Ensure background color matches design */
+        }
+
+        li > ol{
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            line-height: 14.26px;
+        }
+
+        .btn-duplicate .icon {
+            margin-right: 0px; /* Space between the icon and text */
+            width: 58px; /* Adjust the size as needed */
+            height: 18px;
+            left: 10px;
+            
+        }
+
+        .btn-auth{
+            display: inline-flex;
+            width: auto;
+            height: 22px;
+            align-items: initial;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-size: 12px;
+            justify-content: center;
+            background-color: white;
+        }                               
+
+        .btn-auth .icon {
+            margin-right: 0px; /* Space between the icon and text */
+            width: 80px; /* Adjust the size as needed */
+            height: 18px;
+            
+        }
+
+    
+        .btn-postal{
+            display: inline-flex;
+            width: auto;
+            height: 22px;
+            align-items: initial;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-size: 12px;
+            justify-content: center;
+            background-color: white;
+
+        }
+
+        .btn-duplicate .icon {
+            margin-right: 0px; /* Space between the icon and text */
+            width: 58px; /* Adjust the size as needed */
+            height: 18px;
+            left: 10px;
+        }
+
+        .btn-postal .icon {
+            margin-right: 0px; /* Space between the icon and text */
+            width: 80px; /* Adjust the size as needed */
+            height: 18px;
+            left: 10px;
+            
+        }
+
+
+        .btn-quit{
+            width: 58px;
+            height: 27px;
+            align-items: center;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-size: 12px;
+            line-height: 14.52px;
+            justify-content: center;
+            background-color: #ED2F2F
+            ;
+        }
+        .btn-quit > p{
+            color: #FFFFFF;
+        }
+
+        
+        .address-input {
+            width: calc(100% - 12px); /* Adjust the width as needed */
+            margin-top: 5px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px; /* Space above the buttons */
+        }
+
+        .button-container button {
+            padding: 8px 16px;
+            margin-left: 10px; /* Space between buttons */
+        }
+
+        .button-container .btn-cancel {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .button-container .btn-submit {
+            background-color: #ccc;
+            border: none;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        .button-container button:hover {
+            opacity: 0.8;
+        }
+
+        footer{
+            width: 790px;
+            height: 17px;
+            margin: 0 auto;
+        }
+        
+        
+        .copyright >span:nth-child(1){
+            width: 182.87px;
+            height: 14px;
+            top: 1px;
+            gap: 0px;
+            opacity: 0px;
+            font-size: 11.44px;
+            font-weight: 400;
+            line-height: 14.52px;
+            text-align: left;
+            color: #777777;
+        }
+        
+        .copyright >span:nth-child(2){
+            float: right;
+            width: 30.2px;
+            height: 14px;
+            left: 760px;
+            gap: 0px;
+            opacity: 0px;
+            font-size: 11.44px;
+            font-weight: 400;
+            line-height: 24.52px;
+            text-align: left;
+            color: #777777;
+        }
