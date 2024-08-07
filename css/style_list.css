@@ -71,6 +71,13 @@ line-height: 51px;
 margin: 0 auto;
 position: relative;
 font-size: 12px;
+width: 800px;
+height: 47px;
+margin: 0 auto;
+position: relative;
+font-size: 12px;
+top: 15px;
+left: 5px;
 text-align: left;
 }
 
@@ -81,6 +88,12 @@ right: 0;
 line-height: 31px;
 text-align: right;
 position: absolute;
+
+top: 10px;
+left: 557px;
+text-align: right;
+position: relative;
+
 
 
 }
@@ -96,7 +109,6 @@ left: 0px;
 top: -30px;
 background: #FFFFFF;
 border: 1px solid #D7D7D7;
-
 }
 
 .container button[type="submit"] {
