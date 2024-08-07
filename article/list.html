@@ -1,172 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>글목록</title>
-    <link rel="stylesheet" href="../css/style_list.cssD">
-<style>
-     *{
+    <link rel="stylesheet" href="../css/style_list.css">
+    <style>
+        * {
             margin: 0;
             padding: 0;
-            font-family:  12px "Inter", sans-serif;
+            font-family: 12px "Inter", sans-serif;
+            
         }
 
-        ul, ol {list-style: none;}
-        a{text-decoration: none; color: #111;}
+    
 
-        #wrapper {
+        a {
+            text-decoration: none;
+            color: #111;
+        }
+
+     
+            #wrapper {
             width: 100%;
-            height: 100%;
+            height: 496px;
+            top: -203px;
+            left: -480px;
+            gap: 0px;
+            opacity: 0px;
+            background: #FFFFFF;
+            border: 1px solid black;
+          
         }
-
-        header {
+        
+        header > div {
             display: flex;
             width: 800px;
             height: 35px;
             left: 560px;
-            padding: 10px ;
+            padding: 10px;
+            text-align: left;
+            margin: 0 auto;
+        }
+
+        header .top {
+            font-size: 10.13px;
+            font-weight: 400;
+            line-height: 12.25px;
             text-align: left;
             
         }
 
-        header .top {
-            width: 67.87px;
+        header .logout {
+            position: absolute;
+            width: 173.2px;
             height: 14px;
-           font-size: 10.13px;
-           line-height: 12.25px;
-           
-
+            left: 627px;
+            top: 11px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
         }
 
-        header .logout {
-
-            position: relative;
-            left: 1000px;
-            width: 175.2px;
-            height: 14px;
-            top: 11px;
-            
+        header .logout>span {
+            font-weight: 400;
             font-size: 12px;
             line-height: 14.52px;
-            font-weight: 400;
-            
-
-        }
-        header .logout > span {
-           font-weight: 400;
-            font-size: 12px;
-            line-height: 14.52px; 
         }
 
-        main > section {
+        main>section {
             width: 800px;
             height: 180px;
+            margin: 0 auto;
+        }
+
+        main>section>nav {
+            width: 800px;
+            height: 51px;
+            gap: 0px;
+            opacity: 0px;
+        }
+
+        main>section>nav>form {
+            position: absolute;
+            height: 31px;
+            left: 557px;
+            right: 0px;
+            top: 10px;
+        }
+
+        main>section>nav>a {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.52px;
+            text-align: left;
+        }
+
+        main>section>nav>form>p {
+            width: 202px;
+            height: 28px;
+            top: 1.5px;
+            padding: 5.5px 1px 5.5px 1px;
+            gap: 0px;
+            border: 1px 0px 0px 0px;
+            opacity: 0px;
+        }
+
+        table {
+            width: 800px;
+            height: 84px;
+            top: 51px;
+            border-collapse: collapse;
+            text-align: center;
+            border: none;
+        }
+
+        main>section>button {
+            width: 42px;
+            height: 35px;
+            top: 145px;
+            left: 316px;
+            font-size: 12px;
+            line-height: 14.52px;
+            text-align: center;
             
         }
 
+        main>section>.b1, .b2, .b3 {
+            width: 24px;
+            height: 33px;
+            top: 146px;
+            left: 361px;
+            padding: 9px 0px 10px 0px;
+            gap: 0px;
+            border: 1px 0px 0px 0px;
+            opacity: 0px;
 
+            
+        }
 
-table {
-width: 800px;
-height: 84px;
-top: 51px;
-border-collapse:collapse;
-}
+        main>section>.b1 {
+            background: #888888;
+            border: 1px solid #6D6D6D;
+            color: #FFFFFF;
+        }
 
+        main>section>.b4 {
+            width: 54px;
+            height: 35px;
+            top: 145px;
+            left: 746px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.52px;
+            text-align: center;
+            float: right;
+            background: #4B545E;
+             color: #FFFFFF;
 
-footer > .copyright {
-width: 200px;
-height: 14px;
-top: 1px;
-gap: 0px;
-opacity: 0px;
+        }
 
-}
+        footer {
+            width: 790px;
+            height: 17px;
+            top: 335px;
+            left: 560px;
+            padding: 0px 0px 2px 0px;
+            gap: 0px;
+            opacity: 0px;
+            margin: 0 auto;
+        }
 
-footer > div > p {
-    width: 30.2px;
-    height: 14px;
-    left: 760px
+        footer>div  {
+            width: 790px;
+            height: 14px;
 
-}
+            font-weight: 400;
+            line-height: 14.52px;
+            text-align: left;
 
+        }
 
+        footer>div > h3:nth-child(2) {
+            position: absolute;
+            width: 30.2px;
+            height: 14px;
+            left: 760px;
 
+        }
+    </style>
 
-</style>
 </head>
 
-
-
-
-
 <body>
-    <div id="wrapper">
-        <header>
-            <div class="top"> Board System</div>
-            <div class="logout"> 홍길동님 반갑습니다.
-                <span>[로그아웃]</span>
-            </div>
-        </header>
+    <header>
+        <div class="top"> Board System</div>
+        <div class="logout"> 홍길동님 반갑습니다.
+            <span>[로그아웃]</span>
+        </div>
+    </header>
 
-        <main>
-            <section>
-                <nav>
-                    <a href="#">글목록</a>
-                    <form action="">
-                        <p>
-                            <input type="text" name = "keyword" value title="글쓴이 검색"
-                            placeholder = "제목 키워드, 글쓴이 검색">
-                            <button type="submit" value="검색" class="kboard-default-button-small">검색</button>
-                        </p>
-                        
-                    </form>  
-                    
-                </nav>
-               
+    <main>
+        <section>
+            <nav>
+                <a href="#">글목록</a>
+                <form action="">
+                    <p>
+                        <input type="text" name="keyword" value title="글쓴이 검색" placeholder="제목 키워드, 글쓴이 검색">
+                        <button type="submit" value="검색" class="search">검색</button>
+                    </p>
+                </form>
+            </nav>
+            <table border="1">
 
-                
-                <table border="1">
-                    <tr>
-                        <th class="list-uid">번호</th>
-                        <th class="list-title">제목</th>
-                        <th class="list-user">글쓴이</th>
-                        <th class="list-date">작성일</th>
-                        <th class="klist-view">조회</th>
-                    </tr>
-                    <tr>
-                        <tr>
-                            <td class="list-uid">1</td>
-                            <td class="list-title">테스트 제목입니다.
-                            <td class="list-user">길동이</td>
-                            <td class="list-date">20-05-12</td>
-                            <td class="list-view">12</td>
-                        </tr>
+                <tr style="width: 800px; height: 41.5px; border-bottom: 1px solid #D1DEE2;  background: #E5ECEF">
 
+                    <th class="list-uid">번호</th>
+                    <th class="list-title">제목</th>
+                    <th class="list-user">글쓴이</th>
+                    <th class="list-date">날짜</th>
+                    <th class="list-view">조회</th>
+                </tr>
+                <tr>
+                    <td class="list-uid">1</td>
+                    <td class="list-title">테스트 제목입니다.[3]</td>
+                    <td class="list-user">길동이</td>
+                    <td class="list-date">20-05-12</td>
+                    <td class="list-view">12</td>
+                </tr>
+            </table>
 
-                    </tr>
-                    
-                </table>
+            <button>이전</button>
+            <button class="b1">1</button>
+            <button class="b2">2</button>
+            <button class="b3">3</button>
+            <button>다음</button>
+            <button class="b4">글쓰기</button>
 
-                
-                <input type="button" value="이전">
-                <input type="button" value="1">
-                <input type="button" value="2">
-                <input type="button" value="3">
-                <input type="button" value="다음">
-                <input type="button" value="글쓰기">
 
         </section>
-        </main>
+    </main>
     </div>
     <footer>
-        <div class="copyright">
-            Copyright© 김철학(개발에반하다.)
-            <p>v1.0.1</p>
+        <div>
+            <h4>Copyright© 김철학(개발에반하다.)</h4>
+            <h3>v1.0.1</h3>
+        
         </div>
-      
-          
       
     </footer>
 </body>
+
 </html>
