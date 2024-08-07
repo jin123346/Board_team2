@@ -92,7 +92,6 @@
         padding: 8px;
         box-sizing: border-box;
         border: 1px solid white;
-        resize: none;
     }
     .form-table input[type="file"] {
         padding: 8px;
@@ -107,7 +106,7 @@
         height: 35px;
         background-color: #4B545E;
         color: white;
-        border: none;
+        border: 1px solid #4B545E;
     }
 
     .form-buttons >button:nth-child(1) {
