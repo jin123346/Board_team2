@@ -4,6 +4,7 @@ a, address, blockquote, br, fieldset, legend, label, form, input, select, textar
 h1, h2, h3, h4, h5, h6 {color:#000;}
 ul, ol, li {list-style: none;}
 input, textarea {outline: none;}
+input:focus{outline:none;}
 
 #wrapper {
     width: 100%;
@@ -13,14 +14,16 @@ input, textarea {outline: none;}
 }
 
 header{
-   
     width: 790px;
     height: 30px;
     margin: 0 auto;
+  
 }
 header .top{
     font-size: 10.31px;
+    line-height: 30px;
 }
+
 main{
     width: 790px;
     height: auto;
@@ -31,7 +34,7 @@ main{
     width: 600px;
     height: 286px;
     margin-top: 65px;
-    padding: 20px;
+    padding-top: 16px;
 }
 form{
     width: 600px;
@@ -45,8 +48,14 @@ form{
     text-align: left;
     font-size:12px;
     font-weight: 400;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     border-bottom: 2px solid #222121;
+}
+
+.header > span  {
+    width: 63.2px;
+    height: 14px;
+    box-sizing: border-box;
 }
 table {
    
@@ -62,43 +71,75 @@ td {
 tr{
     width: auto;
 }
+
+
+tr:nth-child(2) td:nth-child(2){
+   padding-top: 18px;
+   padding-left:12.42px;
+   padding-bottom: 14px;
+}
+
 tr:nth-child(1){
-    height: 47px;
+    height: 49px;
 }
 tr:nth-child(2){
     height: 87px;
 }
 
+
+table td:nth-child(1){
+    width: 120px;
+    box-sizing: border-box;
+}
+table td:nth-child(2){
+    width: auto;
+    box-sizing: border-box;
+}
+table td:nth-child(3){
+    width: 120px;
+    box-sizing: border-box;
+}
+
+
 input {
-    width: 162px;
+    width: 164px;
     height: 24px;
-    padding: 3px;
     box-sizing: border-box;
     border: 1px solid #E4EAEC;
     line-height: 24px;
+    background: #F7F7F7;
 }
+
+input::placeholder{
+    text-indent: 6px;
+} /* 텍스트 들여쓰기 */
 
 input#code {
     margin-bottom: 1px;
 }
 button {
     border: 1px solid #BEBEBE;
-    margin: 3px;
     height: 27px;
     background-color: #EFEFEF;
-    padding: 0px;
 }
 .form-group{
-    margin-bottom: 5px;
+    height: 27px;
+    box-sizing: border-box;
+    /* margin-bottom: 5px; */
 }
 
-.form-group > div{
+.form-group > div > *{
+
     box-sizing: border-box;
     display: inline-flex;
     text-align: center;
     justify-content: center;
     
 } 
+
+.form-group:nth-child(1){
+    margin-bottom: 4px;
+}
 
  .btn-auth{
     box-sizing: border-box;
@@ -147,7 +188,7 @@ button {
 }
 .footer {
     text-align: right;
-    margin-top: 20px;
+    margin-top: 32px;
 }
 
 .footer > button{
@@ -165,6 +206,7 @@ button {
     font-weight: 400;
     line-height: 14.52px;
     text-align: center;
+    margin: 0px;
 
 }
 .footer >.btn-next{
@@ -183,6 +225,7 @@ footer{
     width: 790px;
     height: 17px;
     margin: 0 auto;
+    margin-top: 60px;
 }
 
 
