@@ -66,11 +66,11 @@ table tr:nth-of-type(1){
 
 .infotable {
     width: 600px;
-    height: 512px;
+    height: 578px;
     box-sizing: border-box;
 }
 .form{
-    height: 441px;
+    height: 507px;
     box-sizing: border-box;
 }
 table > tr {
@@ -111,11 +111,11 @@ gap:0px;
 }
 .form table:nth-of-type(1){
     box-sizing: border-box;
-    height: 115px;
+    height: 139px;
 }
 .form table:nth-of-type(2){
     box-sizing: border-box;
-    height: 266px;
+    height: 306px;
 }
 
 .form th, .form td{
@@ -258,6 +258,25 @@ li:nth-child(1){
     height: 18px;
     left: 10px;
     
+}
+
+
+.btn-quit{
+    width: 58px;
+    height: 27px;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 14.52px;
+    justify-content: center;
+    background-color: #ED2F2F;
+    margin: 0;
+
+}
+.btn-quit > p{
+    color: #FFFFFF;
 }
 
 
