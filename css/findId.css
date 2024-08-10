@@ -115,6 +115,7 @@ input::placeholder{
 } /* 텍스트 들여쓰기 */
 
 input#code {
+    
     margin-bottom: 1px;
 }
 button {
