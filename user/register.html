@@ -13,7 +13,7 @@
         </header>
         <main>
             <section class="infotable">
-                <form id="register-form">
+                <form class="form">
                     <span>사이트 이용정보 입력</span>
                     <table>
                       <tr>
@@ -53,12 +53,13 @@
                         <tr>
                             <th>별명</th>
                             <td class="form-group">
-                                <div><p>공백없는 한글, 영문, 숫자 입력</p></div>
-                                <div class="nick">
-                                    <input type="text" id="input nickname" placeholder="">
-                                    <button type="button" class="btn-duplicate" placeholder="별명 입력"> <img src="../images/chk_id.gif" alt="Duplicate Check" class="icon"></button>
-                                </div>
-                               
+                                <ul>
+                                    <li><p>공백없는 한글, 영문, 숫자 입력</p></li>
+                                    <li>
+                                        <input type="text" id="input nickname" placeholder="">
+                                        <button type="button" class="btn-duplicate" placeholder="별명 입력"> <img src="../images/chk_id.gif" alt="Duplicate Check" class="icon"></button>
+                                    </li>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
@@ -71,14 +72,14 @@
                         <tr>
                             <th>휴대폰</th>
                             <td class="form-group">
-                                <input type="tel" id="input email" placeholder="휴대폰 입력">
+                                <input type="tel" id="input tel" placeholder="휴대폰 입력">
                             </td>
                         </tr>
                         <tr>
                             <th>주소</th>
                             <td class="form-group">
                                 <div class="address">
-                                    <input type="search" id="search-address" placeholder="우편번호">
+                                    <input type="text" id="search-address" placeholder="우편번호" readonly>
                                     <button type="button" class="btn-postal"> <img src="../images/chk_post.gif" alt="Postal check" class="icon"></button>
                                 </div>
                                 <div class="address">
