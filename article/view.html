@@ -1,138 +1,79 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Board System</title>
+    <title>View</title>
+    <link rel="stylesheet" href="../css/style_view.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .header h1 {
-            font-size: 24px;
-        }
-        .header .user-info {
-            font-size: 14px;
-        }
-        .header .user-info a {
-            text-decoration: none;
-            color: #333;
-        }
-        .search-bar {
-            margin: 20px 0;
-        }
-        .search-bar input[type="text"] {
-            width: 80%;
-            padding: 10px;
-            margin-right: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .search-bar input[type="submit"] {
-            padding: 10px 20px;
-            border: none;
-            background-color: #333;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-        .pagination {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-        }
-        .pagination li {
-            margin: 0 5px;
-        }
-        .pagination li a {
-            text-decoration: none;
-            color: #333;
-            padding: 10px 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .pagination li a.active, .pagination li a:hover {
-            background-color: #333;
-            color: #fff;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 14px;
-            color: #aaa;
-        }
+   
     </style>
 </head>
 <body>
+    <header>
+        <h1>Board System</h1>
+        <div>
+            홍길동님 반갑습니다. <a href="#">[로그아웃]</a>
+        </div>
+    </header>
     <div class="container">
-        <div class="header">
-            <h1>Board System</h1>
-            <div class="user-info">
-                홍길동님 반갑습니다. <a href="#">(로그아웃)</a>
-            </div>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="제목 키워드, 글쓴이 검색">
-            <input type="submit" value="검색">
-        </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>번호</th>
+        <nav>
+            <h4>글보기</h4>
+        </nav>
+        <form>
+            <table class="tb_1">
+                <tr class="tr_tit">
                     <th>제목</th>
-                    <th>글쓴이</th>
-                    <th>날짜</th>
-                    <th>조회</th>
+                    <td><div>제목입니다.</div></td>
                 </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>테스트 제목입니다.[3]</td>
-                    <td>김동이</td>
-                    <td>20-05-12</td>
-                    <td>12</td>
+                <tr class="tr_file">
+                    <th>파일</th>
+                    <td><a href="#">2020년 상반기 매출자료.xls 7회</a>
+                        <a href="#">다운로드</a>
+                    </td>
                 </tr>
-            </tbody>
-        </table>
-        <ul class="pagination">
-            <li><a href="#">이전</a></li>
-            <li><a href="#" class="active">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">다음</a></li>
-        </ul>
-        <div class="footer">
-            Copyright ⓒ 김철수(개발에탑하다.) v1.0.1
-        </div>
+                <tr class="tr_con">
+                    <th>내용</th>
+                    <td><div></div></td>
+                </tr>
+            </table>
+            <div class="btn_1">
+                <button type="button">목록</button>
+                <button type="button">수정</button>
+                <button type="button">삭제</button>
+            </div>
+            <section class="cmt_1">
+                <div>댓글목록</div>
+                <ul>
+                    <li>
+                        <p>길동이 20-05-20</p>
+                        <p>댓글 샘플 입니다.</p>
+                        <div>
+                            <button type="button">삭제</button>
+                            <button type="button">수정</button>
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                    <span>등록된 댓글이 없습니다.</span>
+                </div>
+            </section>
+            <section class="cmt_2">
+                <div>댓글쓰기</div>
+                <textarea></textarea>
+                <div class="btn_2">
+                    <button type="button">작성완료</button>
+                    <button type="submit">취소</button>
+                </div>
+            </section>
+        </form>
     </div>
+    <footer>
+        <span>
+            Copyright© 김철학(개발에반하다.)
+        </span>
+        <span>
+            v1.0.1
+        </span>
+    </footer>
 </body>
 </html>

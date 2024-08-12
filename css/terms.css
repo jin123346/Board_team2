@@ -1,0 +1,70 @@
+/*
+-------------------------------------------------
+-------------------------------------------------
+Terms Style Sheet
+Version : 1.00
+Author : 김민희
+First update : 2024. 08. 12.
+Last update : 2024. 00. 00.
+-------------------------------------------------
+-------------------------------------------------
+*/
+
+/* reset */
+html,body { width: 100%; height:100%; margin:0; padding:0; font-family: "Inter", sans-serif; font-size: 12px; font-weight: 400; box-sizing: border-box;}
+body{color: #111; word-break:keep-all; -ms-word-break:keep-all; }
+a, address, blockquote, br, fieldset, legend, label, form, input, select, textarea, button, cite, code, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, div, iframe, ul, ol, li, hr, img {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {color:#000;}
+ul, ol, li {list-style: none;}
+abbr,acronym {border: 0;}
+img {vertical-align: middle; max-width:100%;}
+img, fieldset, iframe {border: none;}
+em, address, i {font-style: normal;}
+table.tb,
+div:not(.txt_edit) table {border-collapse: collapse; border-spacing: 0;}
+textarea {overflow:auto;}
+input, select, textarea { font-size:100%; vertical-align: middle; box-sizing: border-box;}
+input:focus{outline: none;}
+select {font-size: inherit; font-family: inherit; color: inherit; text-transform: none;vertical-align: middle; box-sizing:border-box; appearance: none; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none;}
+button {font-family: "Inter", sans-serif;}
+li, a, span, dd {display:inline-block;}
+
+/* hyper link */
+a,
+a:link,
+a:visited {text-decoration: none; color: inherit;}
+a:active,
+a:hover {text-decoration: none; color: inherit;}
+input:active{outline: none;}
+
+/* #wrapper */
+#wrapper{width: 100%; height: auto;}
+
+/* #header */
+#header{width: 100%; height: 30px; }
+.headerIn{width: 790px; margin: 0 auto; font-size: 10.13px; line-height: 30px;}
+
+/* container - 이용약관 */
+#container{width: 100%; margin-top: 71px;}
+.cnt{width: 600px; margin: 0 auto;}
+.cnt:first-child{margin-bottom: 11px;}
+.cnt .cnt_tit{font-size: 12px; font-weight: 400; margin-bottom: 8px;}
+
+.cnt_txt{position: relative; width: 600px; height: 237px; 
+	border: 1px solid #111; padding: 7px 6.5px 6.5px 6.5px; 
+	box-shadow: 1px 1px 0 0 #E9E9E9 inset;
+	box-sizing: border-box;}
+/* .cnt_txt::before{display: block; content: ""; clear: both;  border: 1px solid #E9E9E9;} */
+.cnt_txt::after{position: absolute; top: -2px; left: -1px; display: block; content: ""; clear: both; width: 600px; height: 1px; background: #111;}
+/* .cnt_txt label{position: absolute; bottom:0; right:0;} */
+.cnt_txt label{float: right; margin-top: 4px;}
+.cnt_txt input[type="textarea"]{width: 586px; height: 200px; border: 1px solid #E4EAEC; box-sizing: border-box; background: #F7F7F7;}
+
+.btn{width: 600px; margin: 0 auto; text-align: right;}
+.btn a{margin: 10px 0 0 0; width: 42px; height: 35px; line-height: 35px; text-align: center; border: 1px solid #bebebe; background: #fff;}
+.btn a::after{display: block; content: ""; clear: both;}
+
+/* footer */
+#footer{width:790px; margin:0 auto; overflow: hidden; color:#777; padding-top:60px;}
+.fcopy{float:left;}
+.fcopy:last-child{float: right;}
