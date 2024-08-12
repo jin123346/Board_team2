@@ -3,6 +3,7 @@
     padding: 0;  
     font-family: "Inter", sans-serif;
 }
+
     textarea:focus, input:focus{outline:none;}
 
     textarea::placeholder, input::placeholder {
@@ -17,7 +18,7 @@
         font-family: Arial, sans-serif;
     }
     
-     /* 헤더 영역 */
+
     header {
         display: flex;
         justify-content: space-between;
@@ -27,6 +28,7 @@
         height: 35px;
     }
 
+    
     header > div {
         font-size: 12px;
     }
@@ -53,6 +55,12 @@
         height: 47px;
         margin: 0 auto;
         position: relative;
+    }
+
+    .container > form {
+   
+
+
     }
 
     .container h4 {

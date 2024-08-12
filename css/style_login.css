@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/*
+-------------------------------------------------
+-------------------------------------------------
+Login Style Sheet
+Version : 1.00
+Author : 김민희
+First update : 2024. 08. 05.
+Last update : 2024. 00. 00.
+-------------------------------------------------
+-------------------------------------------------
+*/
+
+/* reset */
+html,body { width: 100%; height:100%; margin:0; padding:0; font-family: "Inter", sans-serif; font-size: 12px; font-weight: 400;}
+body{color: #000; word-break:keep-all; -ms-word-break:keep-all; }
+a, address, blockquote, br, fieldset, legend, label, form, input, select, textarea, button, cite, code, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, div, iframe, ul, ol, li, hr, img {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {color:#000;}
+ul, ol, li {list-style: none;}
+abbr,acronym {border: 0;}
+img {vertical-align: middle; max-width:100%;}
+img, fieldset, iframe {border: none;}
+em, address, i {font-style: normal;}
+table.tb,
+div:not(.txt_edit) table {border-collapse: collapse; border-spacing: 0;}
+textarea {overflow:auto;}
+input, select, textarea { font-size:100%; vertical-align: middle; box-sizing: border-box;}
+input:focus{outline: none;}
+select {font-size: inherit; font-family: inherit; color: inherit; text-transform: none;vertical-align: middle; box-sizing:border-box; appearance: none; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none;}
+button {font-family: "Inter", sans-serif;}
+li, a, span, dd {display:inline-block;}
+
+/* hyper link */
+a,
+a:link,
+a:visited {text-decoration: none; color: inherit;}
+a:active,
+a:hover {text-decoration: none; color: inherit;}
+input:active{outline: none;}
+
+/* #wrapper */
+#wrapper{width: 100%; height: auto;}
+
+/* #header */
+#header{width: 100%; height: 30px; }
+.headerIn{width: 790px; margin: 0 auto; font-size: 10.13px; line-height: 30px;}
+
+/* #main */
+#main{width: 100%; height: 222px; margin-top:100px;}
+#main section{width:360px; height: auto; margin:0 auto; border: 1px solid #CFDED8;}
+
+/* 아이디/비밀번호 입력 form */
+.login_box{overflow: hidden;}
+.login{width: 256px; margin:0 auto; overflow: hidden; padding-top:30px; box-sizing: border-box;}
+.login{overflow: hidden;}
+
+.login_ip_w{float:left;}
+.ip_w{width: 190px; float: left;}
+.login_ip_w .ip_w img{width: 20px; height: 16.83px; float: left; display: inline-block; margin:3.5px 6px 0 0;}
+.login_ip_w .ip_w input[type="text"],[type="password"]{float:left; width: 164px; height: 24px; box-sizing: border-box; background: #F7F7F7; border: 1px solid #E4EAEC; color: #757575; font-size: 12px; font-weight: 400; line-height: 14.52px; text-align: left;}  
+.login_ip_w .ip_w input[type="text"]{margin-bottom:4px;}
+input::placeholder{text-indent: 1px;} /* 텍스트 들여쓰기 */
+
+/* 로그인 btn */
+.login_btn {float:right; width: 60px; height: 52px; margin-top:-26px; line-height: 14.52px; text-align: center;}
+.login_btn input[type="button"]{display: block; background: #FDFDFD; border: 1px solid #BEBEBE; box-sizing: border-box;}
+
+/* 아이디/비밀번호 찾기 */
+.login_info{width: 360px; height: 104px; background: #F5F6FA; border-top: 1px solid #CFDED8; box-sizing: border-box;
+    line-height: 14.52px;}
+.guide{margin:22px 0 0 20px;}
+.guide .g_txt:last-child{margin-top: 10.48px;}
+
+.find{text-align: right; margin: 10.48px 20px 0 0;}
+.find li{}
+.find li a{display: block;}
+.find li a:hover{cursor: pointer;}
+
+/* footer */
+#footer{width:790px; margin:0 auto; overflow: hidden; color:#777; padding-top:100px;}
+.fcopy{float:left;}
+.fcopy:last-child{float: right;}

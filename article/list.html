@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>글목록</title>
+    <link rel="stylesheet" href="../css/style_list.css">
+</head>
+<body>
+    <header>
+        <h1>Board System</h1>
+        <div>
+            홍길동님 반갑습니다. <a href="#">[로그아웃]</a>
+        </div>
+        
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <nav>
+                  <h4>글목록</h4>
+                <form>
+                        <input type="text"  placeholder="제목 키워드, 글쓴이 검색">
+                        <button type="submit" value="검색" class="search">검색</button>
+                </form>
+            </nav>
+            <table border="1">
+
+                <tr style="width: 800px; height: 41.5px;  border:none; background: #E5ECEF">
+
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>날짜</th>
+                    <th>조회</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>테스트 제목입니다.[3]</td>
+                    <td>길동이</td>
+                    <td>20-05-12</td>
+                    <td>12</td>
+                </tr>
+            </table>
+
+        <div id="pageList">
+            <ul class="page">
+                <li><a href="#" class="btn">이전</a></li>
+                <li><a href="#" class="on pagenm">1</a></li>
+                <li><a href="#" class="pagenm">2</a></li>
+                <li><a href="#" class="pagenm">3</a></li>
+
+                <li><a href="#" class="btn">다음</a></li>
+            </ul><!-- page -->
+            <div class="btn_write">
+                <a href="#">글쓰기</a>
+            </div>
+        </div>
+        
+        </section>
+    </main>
+    </div>
+    <footer>
+        <div>
+            Copyright© 김철학(개발에반하다.)
+        </div>
+        <div>
+            v1.0.1
+        </div>
+        </footer>
+</body>
+
+</html>

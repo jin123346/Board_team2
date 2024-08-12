@@ -1,0 +1,209 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html,body { width: 100%; height:100%; margin:0; padding:0; font-family: "Inter", sans-serif; font-size: 12px; font-weight: 400;}
+body{color: #000; word-break:keep-all; -ms-word-break:keep-all; }
+a, address, blockquote, br, fieldset, legend, label, form, input, select, textarea, button, cite, code, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, div, iframe, ul, ol, li, hr, img {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {color:#000;}
+ul, ol, li {list-style: none;}
+abbr,acronym {border: 0;}
+img {vertical-align: middle; max-width:100%;}
+img, fieldset, iframe {border: none;}
+em, address, i {font-style: normal;}
+table.tb,
+div:not(.txt_edit) table {border-collapse: collapse; border-spacing: 0;}
+textarea {overflow:auto;}
+input, select, textarea { font-size:100%; vertical-align: middle; box-sizing: border-box;}
+input:focus{outline: none;}
+input::placeholder{text-indent: 6px;} /* 텍스트 들여쓰기 */
+select {font-size: inherit; font-family: inherit; color: inherit; text-transform: none;vertical-align: middle; box-sizing:border-box; appearance: none; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none;}
+button {font-family: "Inter", sans-serif;}
+li, a, span, dd {display:inline-block;}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* hyper link */
+a,
+a:link,
+a:visited {text-decoration: none; color: inherit;}
+a:active,
+a:hover {text-decoration: none; color: inherit;}
+input:active{outline: none;}
+
+.container {
+    width: 800px;
+    height: 501px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+main > section {
+    margin: 0 auto;
+    
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 800px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+header > div {
+    font-size: 12px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 10.13px;
+}
+
+header a {
+    color: black;
+}
+
+.container > nav {
+width: 800px;
+height: 47px;
+margin: 0 auto;
+position: relative;
+font-size: 12px;
+top: 15px;
+left: 5px;
+text-align: left;
+}
+
+.container form {
+width: 243px;
+height: 31px;
+top: 10px;
+left: 557px;
+text-align: right;
+position: relative;
+
+
+}
+
+
+
+.container input[type="text"] {
+box-sizing: border-box;
+position: absolute;
+width: 202px;
+height: 28px;
+left: 0px;
+top: -30px;
+background: #FFFFFF;
+border: 1px solid #D7D7D7;
+}
+
+.container button[type="submit"] {
+width: 38px;
+height: 31px;
+left: 205px;
+top: -32px;
+text-align: center;
+position: absolute;
+border: 1px solid rgba(215, 215, 215, 1)
+}
+
+
+
+
+table {
+width: 100%;
+height: 84px;
+top: 51px;
+border-collapse: collapse;
+text-align: center;
+border: none;
+border-top: 2px solid black;
+border-collapse: collapse;
+
+}
+td {
+    border-left: none;
+    border-right: none;
+}
+th {
+    border-left: none;
+    border-right: none;
+}
+
+
+
+
+
+
+
+/* pageList */
+#pageList{width:100%; margin-top: 30px;    text-align: center;position: relative;}
+.page{width:300px; margin:0 auto; overflow: hidden;}
+
+.page .btn{
+    display: inline-block;
+    width: 42px;
+    height: 35px;
+    font-family: Inter;
+    font-size: 12px;
+    line-height: 35px;
+    font-weight: 400;
+    text-align: center;
+    background: #F2F2F2;
+    color:#111;
+    border: 1px solid #D7D7D7;
+}
+
+.page li a{
+    display: block;
+    width: 24px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    border: 1px solid #D7D7D7;
+    background: #F2F2F2;
+}
+
+.page li .on{
+    border: 1px solid #6D6D6D;
+    background: #888888;
+    color:#fff;
+}
+
+
+
+/* btn_write 글쓰기 버튼 */
+.btn_write{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn_write a{
+    width: 54px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #4B545E;
+    border: 1px solid #3B3C3F;
+    color:#fff;
+}
+
+
+/* footer */
+footer {
+width: 790px;
+height: 17px;
+margin: 0 auto;
+margin-top: 20px;
+font-size: 12px;
+color: #777;
+}
+footer > div:nth-of-type(1){
+float: left;
+}
+footer > div:nth-of-type(2){
+float: right;
+}
