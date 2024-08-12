@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;  
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
 }
     textarea:focus, input:focus{outline:none;}
 
@@ -68,6 +68,7 @@
         height: 409px;
         border-collapse: collapse;
         position: relative;
+        box-sizing: border-box;
     }
 
     .table_1 th, .table_1 td {
@@ -145,7 +146,54 @@
 
     .tr_file {
         height: 51px;
+        position: relative;
+        box-sizing: border-box;
     }
+
+    /* input_file */
+
+    label {
+        all: unset;
+        font-weight: 500;
+    }
+
+    .tr_file .div_1 {
+        float: left;
+        width: 80px;
+        height: 20px;
+        font-size: 12px;
+        border: 1px solid #767676;
+        background-color: #efefef;
+        text-align: center;
+        margin-left: 10px;
+        border-radius: 3px;
+        margin-right: 4px;
+        box-sizing: border-box;
+    }
+
+    .tr_file .div_2 {
+        font-size: 10.62px;
+        margin-top: 2px;
+        box-sizing: border-box;
+    }
+
+    .tr_file div > label:nth-child(1) {
+        width: 64.23px;
+        height: 14px;
+        top: 3px;
+        left: 8px;
+    }
+    
+    .tr_file div > label:nth-child(2) {
+        width: 70.18px;
+        height: 14px;
+        top: 3px;
+        left: 84.03px;
+        gap: 0px;
+        opacity: 0px;
+        box-sizing: border-box;
+    }
+
 
     /* 취소, 작성 버튼 영역 */
 
