@@ -121,6 +121,8 @@ border-collapse: collapse;
 text-align: center;
 border: none;
 border-top: 2px solid black;
+
+
 }
 
 th{
@@ -133,10 +135,7 @@ td{
     border-right: none;
 }
 
-th {
-    border-left: none;
-    border-right: none;
-}
+
 
 
 /* pageList */
@@ -184,6 +183,8 @@ li:last-child{
     background: #888888;
     color:#fff;
 }
+
+
 
 /* btn_write 글쓰기 버튼 */
 .btn_write{
