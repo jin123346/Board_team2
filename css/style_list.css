@@ -22,13 +22,11 @@ body {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
-
 #wrapper{
     width: 100%;
     height: auto;
     box-sizing: border-box;
 }
-
 /* hyper link */
 a,
 a:link,
