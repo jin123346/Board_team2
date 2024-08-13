@@ -44,7 +44,7 @@ form{
 .container section{
    height: 161px;
 }
-.header {
+.headtxt {
     text-align: left;
     font-size:12px;
     font-weight: 400;
@@ -52,7 +52,7 @@ form{
     border-bottom: 2px solid #222121;
 }
 
-.header > span  {
+.headtxt > span  {
     width: 63.2px;
     height: 14px;
     box-sizing: border-box;
@@ -123,13 +123,13 @@ button {
     height: 27px;
     background-color: #EFEFEF;
 }
-.form-group{
+.form_group{
     height: 27px;
     box-sizing: border-box;
     /* margin-bottom: 5px; */
 }
 
-.form-group > div > *{
+.form_group > div > *{
 
     box-sizing: border-box;
     display: inline-flex;
@@ -138,11 +138,11 @@ button {
     
 } 
 
-.form-group:nth-child(1){
+.form_group:nth-child(1){
     margin-bottom: 4px;
 }
 
- .btn-auth{
+ .btn_auth{
     box-sizing: border-box;
     width: 85px;
     font-size: 12px;
@@ -152,7 +152,7 @@ button {
 } 
 
 
-.btn-confim{
+.btn_confim{
     box-sizing: border-box;
     width: 34px;
     height: 27px;
@@ -187,17 +187,17 @@ button {
    
 
 }
-.footer {
+.btns {
     text-align: right;
     margin-top: 32px;
 }
 
-.footer > button{
+.btns > button{
     border: 1px solid #BEBEBE;  
     background-color: #FFFFFF;
 }
 
-.footer >.btn-cancel{
+.btns >.btn_cancel{
     
     width: 42px;
     height: 35px;
@@ -210,7 +210,7 @@ button {
     margin: 0px;
 
 }
-.footer >.btn-next{
+.btns >.btn_next{
     width: 42px;
     height: 35px;
     font-family: Inter;

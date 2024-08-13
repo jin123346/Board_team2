@@ -84,18 +84,18 @@ tr{
     margin-top: 5px;
 
 }
-.footer {
+.btns {
     text-align: right;
     position: relative;
     margin-top: 30px;  
   
 }
 
-.footer > button{
+.btns > button{
     border: 1px solid #BEBEBE;  
     background-color: #FFFFFF;
 }
-.footer >.btn-login{
+.btns >.btn_login{
     
     width: 54px;
     height: 35px;
@@ -107,7 +107,7 @@ tr{
     text-align: center;
 
 }
-.footer >.btn-pw{
+.btns >.btn_pw{
     width: 93px;
     height: 35px;
     font-family: Inter;

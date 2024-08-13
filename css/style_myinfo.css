@@ -87,14 +87,14 @@ table, th{
     line-height: 14.52px;
 }
 
-.form-group {
+.form_group {
 display: flex;
 align-items: center;
 flex-wrap: wrap;
 gap:0px; 
 
 }
-.form-group > .address{
+.form_group > .address{
     display: flex;
     align-items: center;
     align-self: center;
@@ -147,14 +147,14 @@ table:nth-child(2){
 
 }
 
-#search-address {
+#search_address {
     width: 162px;
     height: 24px;
     box-sizing: border-box;
 
 }
 
-#input-address {
+#input_address {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -167,7 +167,7 @@ button{
     margin-left: 10px;
     
 }
-.btn-modifty{
+.btn_modifty{
     width: 85px;
     height: 27px;
     border: 1px solid #E9E9E9;
@@ -176,7 +176,7 @@ button{
     margin-top: 0px;
 }
 
-.btn-modifty > p{
+.btn_modifty > p{
     color: #FFFFFF;
 }
 
@@ -189,7 +189,7 @@ li{
 li:nth-child(1){
     margin-bottom: 8px;
 }
-.btn-duplicate {
+.btn_duplicate {
     flex-shrink: 0;
     /* display: inline-flex; */
     width: auto;
@@ -203,14 +203,14 @@ li:nth-child(1){
     height: 18px;
 }
 
-.btn-duplicate .icon {
+.btn_duplicate .icon {
     margin-right: 0px; /* Space between the icon and text */
     width: 58px; /* Adjust the size as needed */
     height: 18px;
     left: 10px;
 }
 
-.btn-auth{
+.btn_auth{
     display: inline-flex;
     width: auto;
     align-items: center;
@@ -222,7 +222,7 @@ li:nth-child(1){
     background-color: white;
 }                               
 
-.btn-auth .icon {
+.btn_auth .icon {
     margin-right: 0px; /* Space between the icon and text */
     width: 80px; /* Adjust the size as needed */
     height: 18px;
@@ -230,7 +230,7 @@ li:nth-child(1){
 }
 
 
-.btn-postal{
+.btn_postal{
     display: flex;
     width: auto;
     height: 18px;
@@ -245,14 +245,14 @@ li:nth-child(1){
     margin-bottom: 3px;
 }
 
-.btn-duplicate .icon {
+.btn_duplicate .icon {
     margin-right: 0px; /* Space between the icon and text */
     width: 58px; /* Adjust the size as needed */
     height: 18px;
     left: 10px;
 }
 
-.btn-postal .icon {
+.btn_postal .icon {
     margin-right: 0px; /* Space between the icon and text */
     width: 80px; /* Adjust the size as needed */
     height: 18px;
@@ -261,7 +261,7 @@ li:nth-child(1){
 }
 
 
-.btn-quit{
+.btn_quit{
     width: 58px;
     height: 27px;
     align-items: center;
@@ -275,7 +275,7 @@ li:nth-child(1){
     margin: 0;
 
 }
-.btn-quit > p{
+.btn_quit > p{
     color: #FFFFFF;
 }
 
@@ -287,31 +287,31 @@ li:nth-child(1){
     box-sizing: border-box;
 }
 
-.button-container {
+.button_container {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px; /* Space above the buttons */
 }
 
-.button-container button {
+.button_container button {
     padding: 8px 16px;
     margin-left: 10px; /* Space between buttons */
 }
 
-.button-container .btn-cancel {
+.button_container .btn-cancel {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     cursor: pointer;
 }
 
-.button-container .btn-submit {
+.button_container .btn_submit {
     background-color: #ccc;
     border: none;
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
-.button-container button:hover {
+.button_container button:hover {
     opacity: 0.8;
 }
 
