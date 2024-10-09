@@ -10,3 +10,4 @@ https://www.figma.com/design/BXLYJ9lecNQfn2poa08Eli/html-board-project?node-id=0
 박서홍 - 글 목록<br>
 하정훈 - 글쓰기, 글수정, 글보기<br>
 하진희 - 아이디찾기, 아이디보기, 마이인포, 회원가입<br> 
+# Team2_LotteON
